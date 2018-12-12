@@ -6,10 +6,143 @@
 	box-sizing: border-box;
 }
 
+/* HEADER */
 #pre-nav{
     width: 100%;
     height: 2rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    background-color: grey;
+    background-color: black;
+    color: #D22630;
 }
+
+#pre-nav a{
+    color: white;
+}
+
+#pre-nav #phone{
+    margin-left: 9em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#pre-nav #lenguaje{
+    margin-right: 9em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#pre-nav #phone i{
+    margin-right: 0.5em;
+}
+
+#pre-nav #lenguaje i{
+    margin-right: 0.5em;
+}
+
+#pre-nav #lenguaje select{
+    margin-right: 1em;
+}
+
+/* Nav */
+#logo{
+    height: 7em;
+    width: 7.5em;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #D22630;
+}
+
+nav div#navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav #navegacion a{
+    margin-left: 2em;
+    color: white;
+}
+
+/* MAIN */
+section#slider{
+    width: 100%;
+    height: 50vh;
+    background: url("../img/bg-wine.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div#content{
+    margin-left: 9em;
+}
+
+section#info{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+section#info img{
+    margin: 30px auto;
+    width: 60%;
+    /* height: 30%; */
+}
+
+section#info p{
+    margin: 0 9em;
+}
+
+section#info h2{
+    padding: 25px 0;
+}
+
+section#productos{
+    text-align: center;
+    background-color: #FF0000;
+}
+
+div#tarjetas{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0;
+}
+
+section#productos h3{
+    font-size: 3rem;
+    padding-top: 15px;
+}
+
+div.producto{
+    width: 300px;
+    height: 350px;
+    padding: 25px;
+    text-align: center;
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+}
+
+div.producto h3{
+    font-size: 2rem !important;
+}
+
+div.producto img{
+    width: 140px;
+    height: 140px;
+    margin: 25px 0;
+}
+
