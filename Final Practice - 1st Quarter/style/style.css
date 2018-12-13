@@ -206,7 +206,8 @@ div.producto{
 }
 
 div.producto:hover{
-    width: 310px;
+    width: 301px;
+    height: 351px;
     -webkit-box-shadow: 2px 2px 37px 2px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 2px 37px 2px rgba(0,0,0,0.75);
     box-shadow: 2px 2px 37px 2px rgba(0,0,0,0.75);
@@ -261,7 +262,7 @@ section#contacto input[type="submit"]:hover{
     background-color: #D22630;
 }
 
-form{
+section#contacto form{
     margin: 0 auto;
     width: 40%;
     display: flex;
@@ -277,6 +278,7 @@ section#servicios{
     width: 100%;
     background-color: #f7f7f8;
     padding: 30px 0;
+    margin: 0 auto;
 }
 
 section#servicios p{
@@ -288,11 +290,12 @@ section#servicios h3{
 }
 
 div#card-servicios{
-    margin: 0 15em;
+    width: 80%;
+    margin: 0 auto;
     margin-top: 3em;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
 }
 
 div.servicio{
@@ -326,6 +329,119 @@ section#video{
 
 section#video h2{
     margin-bottom: 10px;
+}
+
+
+/* MAIN - SOBRE NOSOTROS */
+
+section#descripcion{
+    width: 100%;
+    display: flex;
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+div.desc-image{
+    flex: 1;
+    margin-left: 9em;
+}
+
+div.desc-texto{
+    flex: 2;
+    margin-right: 9em;
+}
+div.desc-image img{
+    width: 380px;
+    margin-right: 15px;
+}
+
+/* MAIN - GALERIA */
+
+section#galeria{
+    text-align: center;
+    font-size: 2rem;
+    padding: 25px 0;
+}
+
+section#galeria img{
+    width: 320px;
+}
+
+section#map{
+    margin: 0;
+    padding: 0;
+}
+
+section#map iframe{
+    width: 100%;
+    margin-bottom: -15px;
+}
+
+section#contact{
+    padding: 25px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section#contact form{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    text-align: left;
+}
+
+section#contact input[type="text"],section#contact input[type="email"],
+section#contact textarea{
+    border: solid 1px black;
+    border-radius: 15px;
+    padding: 8px;
+    color: black;
+}
+
+section#contact input[type="text"]:hover,section#contact input[type="email"]:hover,
+section#contact textarea:hover{
+    border-color: #D22630;
+}
+
+section#contact input[type="text"]:focus,section#contact input[type="email"]:focus,
+section#contact textarea:focus{
+    border-color: #D22630;
+}
+
+section#contact input[type="submit"]{
+    border: solid 1px black;
+    border-radius: 15px;
+    width: 150px;
+    margin: 25px 0;
+    transition: 1s;
+    background-color: white;
+    padding: 5px;
+}
+
+section#contact input[type="submit"]:hover{
+    width: 200px;
+    background-color: #D22630;
+}
+
+.datos{
+    text-align: center;
+}
+
+.datos p{
+    margin: 15px 0;
+}
+
+.datos i{
+    font-size: 1.5rem;
+    border: solid 1px #D22630;
+    background-color: #D22630;
+    color: white;
+    padding: 15px;
+    border-radius: 100%;
 }
 
 /* FOOTER */
@@ -368,3 +484,57 @@ footer a:hover{
     color: White;
 }
 
+/* MEDIA QUERIES */
+
+@media (max-width: 990px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div#tarjetas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .producto{
+        width: 80% !important;
+        margin: 15px 0;
+    }
+
+    div#card-servicios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .servicio{
+        width: 80% !important;
+        margin: 15px 0;
+    }
+
+    section#descripcion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    div.desc-texto{
+        width: 80% !important;
+        margin: 0;
+    }
+    
+    div.desc-image{
+        width: 80% !important;
+        margin: 0;
+    }
+
+    div.datos{
+        display: none;
+    }
+}
