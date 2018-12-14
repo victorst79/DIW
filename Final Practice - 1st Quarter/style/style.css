@@ -444,6 +444,80 @@ section#contact input[type="submit"]:hover{
     border-radius: 100%;
 }
 
+/* MAIN - REGISTRO/INICIO */
+
+section#forms{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+section#forms div{
+    width: 400px;
+    border: solid 1px black;
+    padding: 25px;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+section#forms div form div{
+    border: white;
+}
+
+form h3{
+    text-transform: uppercase;
+}
+div.inicio form{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    text-align: left;
+}
+
+div.registro form{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    text-align: left;
+}
+
+section#forms form input[type="text"]{
+
+}
+
+section#forms input[type="text"],section#forms input[type="email"],
+section#forms input[type="password"],section#forms input[type="date"]{
+    border: solid 1px black;
+    border-radius: 15px;
+    padding: 8px;
+    color: black;
+}
+
+section#forms input[type="text"]:hover,section#forms input[type="email"]:hover,
+section#forms input[type="password"]:hover,section#forms input[type="date"]:hover{
+    border-color: #D22630;
+}
+
+section#forms input[type="text"]:focus,section#forms input[type="email"]:focus{
+    border-color: #D22630;
+}
+
+section#forms input[type="submit"]{
+    border: solid 1px black;
+    border-radius: 15px;
+    width: 150px;
+    margin: 25px 0;
+    transition: 1s;
+    background-color: white;
+    padding: 5px;
+}
+
+section#forms input[type="submit"]:hover{
+    width: 200px;
+    background-color: #D22630;
+}
 /* FOOTER */
 
 footer{
@@ -536,5 +610,13 @@ footer a:hover{
 
     div.datos{
         display: none;
+    }
+
+    section#forms{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }

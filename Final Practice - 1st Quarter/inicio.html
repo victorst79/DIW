@@ -47,8 +47,41 @@
     </div>
     <main>
         <section id="forms">
-            <div class="inicio"></div>
-            <div class="registro"></div>
+            <div class="inicio">
+                <form action="#">
+                    <h3>Inicio Sesion</h3>
+                    <label>Usuario</label>
+                    <input type="text" required>
+                    <label>Contraeña</label>
+                    <input type="password" required>
+                    <span><input type="checkbox">Recordar Usuario</span>
+                    <input type="submit" value="Iniciar Sesion">
+                </form>
+            </div>
+            <div class="registro">
+                <form action="#">
+                    <h3>Registro nuevo usuario</h3>
+                    <label>Usuario</label>
+                    <input type="text" required>
+                    <label>Contraeña</label>
+                    <input type="password" required>
+                    <label>Nombre</label>
+                    <input type="text" required>
+                    <label>Apellidos</label>
+                    <input type="text" required>
+                    <label>Fecha de nacimiento</label>
+                    <input type="date">
+                    <label>E-Mail</label>
+                    <input type="email" required>
+                    <div>
+                        <label>Sexo</label><br>
+                        <input type="radio" name="sexo" id="hombre">Hombre
+                        <br>
+                        <input type="radio" name="sexo" id="mujer">Mujer
+                    </div>                    
+                    <input type="submit" value="Registrarse">
+                </form>
+            </div>
         </section>
     </main>
     <footer>
