@@ -3,6 +3,91 @@
     padding: 0px;
 }
 
-.row{
-    height: 50px !important;
+#col1{
+    background-color: red;
 }
+
+#col2{
+    background-color: yellow;
+}
+
+#col3{
+    background-color: blue;
+}
+
+#blue{
+    background-color: blue;
+    height: 50px;
+}
+
+#red{
+    background-color: red;
+    height: 50px;
+}
+
+#black{
+    background-color: black;
+}
+
+#green{
+    background-color: green;
+}
+
+#yellow{
+    background-color: yellow;
+    height: 50px;
+}
+
+#mix{
+    height: 50px;
+}
+
+#fila{
+    height: 100px;
+}
+
+#fila2{
+    height: 300px;
+}
+
+#khaki{
+    background-color: khaki;
+}
+
+#orange-2{
+    background-color: orange;
+}
+
+#blue-2{
+    background-color: blue;
+}
+
+#white-2{
+    background-color: white;
+}
+
+#green-2{
+    background-color: green;
+}
+
+#yellow-2{
+    background-color: yellow;
+}
+
+.col-xl-4{
+    height: 50px;
+}
+
+.row{
+    height: 100px;
+    background-color: lightgray;
+}
+
+.container::after{
+    content: '';
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: black;
+}
+

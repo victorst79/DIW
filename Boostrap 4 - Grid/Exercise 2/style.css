@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    margin: 15px 0px;
+}
+
+section{
+    margin: 15px 0px;
+}
+
+.nav{
+    height: 50px;
+    background-color: green;
+}
+
+.blue{
+    height: 125px;
+    background-color: blue;
+    border: solid 1px black;
+}
+
+.grey{
+    height: 125px;
+    background-color: rgb(104, 102, 102);
+    border: solid 1px black;
+}
+
+.cyan{
+    height: 50px;
+    background-color: cyan;
+}
+
+.orange{
+    height: 125px;
+    background-color: orangered;
+    border: solid 1px black;
+}
+
+.footer{
+    height: 25px;
+    background-color: green;
+}
+
+.red{
+    height: 200px;
+    background-color: red;
+    border: solid 1px black;
+}
+
+.footer2{
+    height: 25px;
+    background-color: yellow;
+    border: solid 1px black;
+}
+
+@media (max-width: 767px) {
+    .nav{
+        background-color: cyan;
+    }
+
+    .three{
+        background-color: green;
+    }
+}
+
+@media (max-width: 575px) {
+    .nav{
+        background-color: rgb(228, 108, 65);
+    }
+
+    .three{
+        background-color: red;
+    }
+
+    .two{
+        background-color: cyan;
+    }
+}
