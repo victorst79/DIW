@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>hache - Diseño y Desarrollo Web</title>
+	<link rel="icon" type="image/png" href="./resources/favicon.ico">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="./index.html">
+				<img src="./resources/logo.png" alt="logotipo" class="logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="./index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./servicios.html">Servicios</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./contacto.html">Contacto</a>
+					</li>
+					<li class="nav-item">
+
+					</li>
+					<li class="nav-item">
+						<div class="dropdown">
+							<button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							  Inicio de sesion
+							</button>
+							<div class="dropdown-menu">
+								<form class="px-4 py-3">
+								  <div class="form-group">
+									<label for="exampleDropdownFormEmail1">E-Mail</label>
+									<input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="Tu E-Mail">
+								  </div>
+								  <div class="form-group">
+									<label for="exampleDropdownFormPassword1">Contraseña</label>
+									<input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Tu contraseña">
+								  </div>
+								  <div class="form-group">
+									<div class="form-check">
+									  <input type="checkbox" class="form-check-input" id="dropdownCheck">
+									  <label class="form-check-label" for="dropdownCheck">
+										No cerrar sesion.
+									  </label>
+									</div>
+								  </div>
+								  <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+								</form>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Registrarse</a>
+								<a class="dropdown-item" href="#">¿Has olvidado la contraseña?</a>
+							  </div>
+						  </div>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section class="container">
+			<h3 class="display-3 text-center">Nuestros Servicios</h3>
+			<h4>SEO</h4>
+			<table class="table table-striped">
+				<thead>
+				  <tr>
+					<th scope="col">Servicio</th>
+					<th scope="col">Prioridad</th>
+					<th scope="col">Horas</th>
+					<th scope="col">Precio</th>
+					<th scope="col"></th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<th scope="row">Estudio</th>
+					<td>Media</td>
+					<td>20</td>
+					<td>150€</td>
+					<td><button type="button" class="btn btn-primary">Contratar</button></td>
+				  </tr>
+				  <tr>
+					<th scope="row">Posicionamiento Organico</th>
+					<td>Alta</td>
+					<td>150</td>
+					<td>700€</td>
+					<td><button type="button" class="btn btn-primary">Contratar</button></td>
+				  </tr>
+				  <tr>
+					<th scope="row">Posicionamiento Palabras Clave</th>
+					<td>Alta</td>
+					<td>75</td>
+					<td>1.000€</td>
+					<td><button type="button" class="btn btn-primary">Contratar</button></td>
+				  </tr>
+				</tbody>
+			  </table>
+			  <h4>SEM</h4>
+			<table class="table table-striped table-dark">
+				<thead>
+				  <tr>
+					<th scope="col">Servicio</th>
+					<th scope="col">Prioridad</th>
+					<th scope="col">Horas</th>
+					<th scope="col">Precio</th>
+					<th scope="col"></th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<th scope="row">Estudio</th>
+					<td>Media</td>
+					<td>20</td>
+					<td>150€</td>
+					<td><button type="button" class="btn btn-info">Contratar</button></td>
+				  </tr>
+				  <tr>
+					<th scope="row">Campaña Marketing</th>
+					<td>Alta</td>
+					<td>15</td>
+					<td>300€</td>
+					<td><button type="button" class="btn btn-info">Contratar</button></td>
+				  </tr>
+				  <tr>
+					<th scope="row">Campaña SERP</th>
+					<td>Baja</td>
+					<td>Consultar</td>
+					<td>Consultar</td>
+					<td><button type="button" class="btn btn-info">Contratar</button></td>
+				  </tr>
+				</tbody>
+			  </table>
+		</section>
+	</main>
+	<footer class="page-footer font-small blue pt-4">
+		<div class="container-fluid text-center text-md-left">
+			<div class="row">
+			<div class="col-md-6 mt-md-0 mt-3">
+				<h5 class="text-uppercase">hache Diseño y Desarrollo Web</h5>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, reprehenderit.</p>
+			</div>
+			<hr class="clearfix w-100 d-md-none pb-3">
+			<div class="col-md-3 mb-md-0 mb-3">
+				<h5 class="text-uppercase">Asociados</h5>
+				<ul class="list-unstyled">
+					<li>
+					<a href="#!">Empresa 1</a>
+					</li>
+					<li>
+					<a href="#!">Empresa 2</a>
+					</li>
+					<li>
+					<a href="#!">Empresa 3</a>
+					</li>
+					<li>
+					<a href="#!">Empresa 4</a>
+					</li>
+				</ul>
+				</div>
+				<div class="col-md-3 mb-md-0 mb-3">
+				<h5 class="text-uppercase">Nuestros Trabajo</h5>
+				<ul class="list-unstyled">
+					<li>
+					<a href="#!">Web 1</a>
+					</li>
+					<li>
+					<a href="#!">Web 2</a>
+					</li>
+					<li>
+					<a href="#!">Web 3</a>
+					</li>
+					<li>
+					<a href="#!">Web 4</a>
+					</li>
+				</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright text-center py-3">© 2018 Copyright: hache
+			<a href="https://github.com/victorst79">Victor Santaella Torres</a>
+		</div>
+	</footer>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>

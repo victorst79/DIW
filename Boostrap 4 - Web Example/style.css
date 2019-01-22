@@ -2,3 +2,42 @@
     margin: 0px;
     padding: 0px;
 }
+
+.logo{
+    width: 50px;
+    height: 50px;;
+}
+
+nav.bg-dark{
+    background-color: #0c5a5c !important;
+}
+.slider img{
+    height: 350px !important;
+}
+
+section.content{
+    padding: 25px 0px;
+}
+
+section.formulario{
+    background-color: #0c5a5c;
+    color: white;
+    padding-bottom: 15px;
+}
+
+section.form{
+    padding-bottom: 15px;
+}
+
+section.formulario h3{
+    padding-bottom: 15px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+.footer-copyright{
+    background-color: rgb(24, 24, 24);
+}
