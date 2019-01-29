@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none !important;
+    text-decoration: none !important;
+    box-sizing: border-box;
+}
+
+/* NAVEGADOR */
+.navbar {
+    background: #444;
+    -o-transition: all .6s;
+    -moz-transition: all .6s;
+    -webkit-transition: all .6s;
+    -ms-transition: all .6s;
+    transition: all .6s;
+    backface-visibility: hidden;
+}
+ 
+.navbar.navbar-no-bg {
+    background: #444;
+    background: rgba(0, 0, 0, 0.2);
+}
+ 
+.navbar-dark .navbar-nav {
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+}
+ 
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+    border: 0;
+    transition: 0.5s;
+}
+ 
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #e1002f;
+}
+ 
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #e1002f;
+    outline: 0;
+}
+ 
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+ 
+/* .navbar-brand {
+    width: 105px;
+    background: url("../resources/logo.png") left center no-repeat;
+    border: 0;
+    text-indent: -99999px;
+} */
+
+/* MAIN - HOME*/
+/* PARALLAX */
+/* .head{
+    background-image: url("../resources/background-2.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+} */
+
+.head{
+    height: 80%;
+}
+
+.head img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/* FOOTER */
+
+footer a{
+    text-decoration: none;
+    color: #e1002f;
+}
+
+footer a:hover{
+    color: #e1002f;
+}
+
+.footer-tanaka{
+	background-color: black;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-tanaka .footer-left,
+.footer-tanaka .footer-center,
+.footer-tanaka .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer-tanaka .footer-left{
+	width: 40%;
+}
+
+.footer-tanaka h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-tanaka h3 span{
+	color:  #5383d3;
+}
+
+.footer-tanaka .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-tanaka .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-tanaka .footer-copy{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-tanaka .footer-center{
+	width: 35%;
+}
+
+.footer-tanaka .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-tanaka .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-tanaka .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-tanaka .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-tanaka .footer-right{
+	width: 20%;
+}
+
+.footer-tanaka .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-tanaka .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-tanaka .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-tanaka .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color: #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 880px) {
+	.footer-tanaka{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-tanaka .footer-left,
+	.footer-tanaka .footer-center,
+	.footer-tanaka .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-tanaka .footer-center i{
+		margin-left: 0;
+	}
+}
