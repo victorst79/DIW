@@ -58,26 +58,38 @@
 
 /* MAIN - HOME*/
 /* PARALLAX */
-/* .head{
+main.home{
     background-image: url("../resources/background-2.jpg");
     background-repeat: no-repeat;
     background-size: auto;
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-} */
-
-.head{
-    height: 80%;
+	height: 100vh;
+	width: 100%;
 }
 
-.head img{
-    width: 100%;
-    height: auto;
-    overflow: hidden;
+.presentation{
+	margin-top: 450px;
+	color: white;
 }
+
+/* MENUS */
+section.menu{
+	margin-top: 75px;	
+}
+
+.producto-head{
+	height: 25px;
+	margin: 20px 0;
+}
+
+.plato img{
+	width: 480px;
+	height: auto;
+}
+
+.pre
 
 /* FOOTER */
 
