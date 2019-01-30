@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tanaka - Restaurante gastronomico Japones especializados en Shushi</title>
+    <title>Tanaka - Menus - Restaurante gastronomico Japones especializados en Shushi</title>
     <link rel="stylesheet" href="css/animate.css">
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="menu">
     <header>
         <nav class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
                 <div class="container">
@@ -24,22 +24,22 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="./index.html">Inicio</a>
+                                <a class="nav-link scroll-link" href="./index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./menu.html">Menu</a>
+                                <a class="nav-link scroll-link" href="./menu.html">Menu</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#section-2">Localizacion</a>
+                                <a class="nav-link scroll-link" href="./localizacion.html">Localizacion</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#section-3">Galeria</a>
+                                <a class="nav-link scroll-link" href="./galeria.html">Galeria</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#section-4">Reservas</a>
+                                <a class="nav-link scroll-link" href="./reservas.html">Reservas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#section-4">Reseñas</a>
+                                <a class="nav-link scroll-link" href="./reseñas.html">Reseñas</a>
                             </li>
                         </ul>
                     </div>
@@ -48,8 +48,13 @@
     </header>
     <main>        
         <section class="container menu">
-            <div class="row">                
-                <h1>MENU</h1>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="./resources/menu-logo.png">
+                </div>
+                <div class="col-12">
+                    <h1 class="text-center">MENU</h1>  
+                </div>
             </div>
             <div class="row">
                 <div class="col-12 producto-head">
@@ -100,7 +105,7 @@
             </div>
             <div class="row">
                 <div class="col-12 producto-head">
-                    <h3>Shushi</h3>
+                    <h3>Principales</h3>
                 </div>
                 <!-- <div class="dropdown-divider"></div> -->
                 <div class="col-12 col-md-6 order-md-1 order-2">                        
@@ -147,53 +152,154 @@
             </div>
             <div class="row">
                 <div class="col-12 producto-head">
-                    <h3>Shushi</h3>
+                    <h3>Segundos</h3>
                 </div>
                 <!-- <div class="dropdown-divider"></div> -->
                 <div class="col-12 col-md-6 order-md-1 order-2">                        
                     <table class="table table-hover">
                         <thead>
                             <tr>
-                                <th scope="col">Shushi o Shashimi</th>
+                                <th scope="col">Noodles</th>
                                 <th scope="col"></th>
                                 <th scope="col"></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th>Inari</th>
+                                <th>Pad Thai</th>
                                 <td></td>
-                                <td>3.80</td>
+                                <td>19.00</td>
                             </tr>
                             <tr>
-                                <th>Tamago</th>
+                                <th>Wonton Noodle</th>
                                 <td></td>
-                                <td>4.00</td>
+                                <td>7.00</td>
                             </tr>
                             <tr>
-                                <th>Hotate</th>
+                                <th>Teri Katsu</th>
                                 <td></td>
-                                <td>6.00</td>
+                                <td>12.00</td>
                             </tr>
                             <tr>
-                                <th>Hamachi</th>
+                                <th>Kogashi Noodle</th>
                                 <td></td>
-                                <td>7.50</td>
+                                <td>11.30</td>
                             </tr>
                             <tr>
-                                <th>Tai</th>
+                                <th>Menya</th>
                                 <td></td>
-                                <td>6.00</td>
+                                <td>10.00</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="col-12 col-md-6 plato order-md-2 order-1">
-                    <img src="./resources/shushi.jpg" alt="">
+                    <img src="./resources/segundos.jpg" alt="">
                 </div>                
             </div>
-            <div class="row pre-footer">
-                <h3>Contacto</h3>
+            <div class="row">
+                    <div class="col-12 producto-head">
+                        <h3>Postres</h3>
+                    </div>
+                    <!-- <div class="dropdown-divider"></div> -->
+                    <div class="col-12 col-md-6 order-md-1 order-2">                        
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Reposteria</th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Mochi</th>
+                                    <td></td>
+                                    <td>2.50</td>
+                                </tr>
+                                <tr>
+                                    <th>Anmitsu </th>
+                                    <td></td>
+                                    <td>4.80</td>
+                                </tr>
+                                <tr>
+                                    <th>Amanattō</th>
+                                    <td></td>
+                                    <td>6.00</td>
+                                </tr>
+                                <tr>
+                                    <th>Anpan</th>
+                                    <td></td>
+                                    <td>2.50</td>
+                                </tr>
+                                <tr>
+                                    <th>Botamochi</th>
+                                    <td></td>
+                                    <td>2.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-12 col-md-6 plato order-md-2 order-1">
+                        <img src="./resources/postres.jpg" alt="">
+                    </div>                
+                </div>
+                <div class="row">
+                        <div class="col-12 producto-head">
+                            <h3>Bebidas</h3>
+                        </div>
+                        <!-- <div class="dropdown-divider"></div> -->
+                        <div class="col-12 col-md-6 order-md-1 order-2">                        
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Bebidas de importacion</th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Sake</th>
+                                        <td></td>
+                                        <td>22.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Amazake</th>
+                                        <td></td>
+                                        <td>12.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Sochu</th>
+                                        <td></td>
+                                        <td>8.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Happōshu</th>
+                                        <td></td>
+                                        <td>3.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Te</th>
+                                        <td></td>
+                                        <td>1.50</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-12 col-md-6 plato order-md-2 order-1">
+                            <img src="./resources/bebidas.jpg" alt="">
+                        </div>                
+                    </div>
+        </section>
+        <section class="container-fluid pre-footer">
+            <div class="row">
+                <div class="col-8">
+                    <h3>Reserva cuanto antes.</h3>
+                </div>
+                <div class="col-4">
+                    <a href="./reservas.html"><button type="button" class="btn btn-danger">Reservar</button> </a> 
+                </div>
             </div>
         </section>
     </main>
@@ -203,21 +309,21 @@
                 <img src="./resources/logo.png" alt="" srcset="">
             </h3>
             <p class="footer-links">
-                <a href="#">Inicio</a>
+                <a href="./index.html">Inicio</a>
                 ·
-                <a href="#">Menu</a>
+                <a href="./menu.html">Menu</a>
                 ·
-                <a href="#">Localizacion</a>
+                <a href="./localizacion.html">Localizacion</a>
                 ·
-                <a href="#">Galeria</a>
+                <a href="./galeria.html">Galeria</a>
                 ·
-                <a href="#">Reservas</a>
+                <a href="./reservas.html">Reservas</a>
                 ·
-                <a href="#">Reseñas</a>
+                <a href="./reservas.html">Reseñas</a>
             </p>
             <p class="footer-copy">Tanaka Shushi Restaurant &copy; 2019</p>
             <br>
-            <p class="footer-copy">Diseño por <a href="https://github.com/victorst79" target=”_blank”>Victor Santaella Torres</a> </p>
+            <p class="footer-copy">Diseño por <a class="footer-red" href="https://github.com/victorst79" target=”_blank”>Victor Santaella Torres</a> </p>
         </div>
         <div class="footer-center">
             <div>
@@ -230,7 +336,7 @@
             </div>
             <div>
                 <i class="fa fa-envelope"></i>
-                <p><a href="mailto:tanaka@mail.com">tanaka@mail.com</a></p>
+                <p><a class="footer-red" href="mailto:tanaka@mail.com">tanaka@mail.com</a></p>
             </div>
         </div>
         <div class="footer-right">
