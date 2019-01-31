@@ -64,11 +64,35 @@ main.home{
 	color: white;
 }
 
+.btn-reservas{
+	color: white;
+	border-color: white;
+	transition-property: all 3s;
+}
+
+.btn-reservas:hover{
+	background-color: #e1002f;
+	width: 150px;
+}
+
+
 /* MENUS */
 
 .menu{
-	background-color: #e5dcb5;
 	margin-top: 30px;
+}
+
+.menus{
+	margin-top: 25px !important;
+}
+
+.menu-bg{
+	/* background-color: #e5dcb5; */
+	margin-top: 30px;	
+	background: -moz-linear-gradient(top, #e5dcb5 86%, #545454 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #e5dcb5 86%,#545454 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #e5dcb5 86%,#545454 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5dcb5', endColorstr='#545454',GradientType=0 );
 }
 
 .producto-head{
@@ -103,6 +127,10 @@ main.home{
 
 .table thead th {
     border-bottom: 2px solid black !important;
+}
+
+div.card{
+	background-color: #CCC4A1;
 }
 
 /* FOOTER */
@@ -262,5 +290,9 @@ footer a.footer-red:hover{
 
 	.footer-tanaka .footer-center i{
 		margin-left: 0;
+	}
+
+	nav{
+		background-color: black !important;
 	}
 }
