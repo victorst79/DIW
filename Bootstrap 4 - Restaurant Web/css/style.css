@@ -67,12 +67,10 @@ main.home{
 .btn-reservas{
 	color: white;
 	border-color: white;
-	transition-property: all 3s;
 }
 
 .btn-reservas:hover{
 	background-color: #e1002f;
-	width: 150px;
 }
 
 
@@ -131,6 +129,10 @@ main.home{
 
 div.card{
 	background-color: #CCC4A1;
+}
+/* LOCALIZACION */
+.localizacion{
+	margin-top: 100px;
 }
 
 /* FOOTER */
