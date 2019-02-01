@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" href="./resources/favicon.png">
 </head>
-<body>
+<body class="reserva">
     <header>
         <nav class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
                 <div class="container">
@@ -38,22 +39,206 @@
                             <li class="nav-item">
                                 <a class="nav-link scroll-link" href="./reservas.html">Reservas</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link scroll-link" href="./reseñas.html">Reseñas</a>
-                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
     </header>
     <main>        
-       <section class="container localizacion">
+       <section class="container">
            <div class="row text-center">
                <div class="col-12">
-                    <h3>El restaurante</h3>
-                    <p>El mejor ambiente fusionando con la mejor comida Japonesa de manos de maestros itamaes.</p>
+                    <h1 class="titulo animated fadeIn">Reserva</h1>
+                    <h3 class="animated fadeIn">Reserva tu mesa y disfruta de una experiencia unica</h3>
                </div>
            </div>
+           <div class="row formulario">
+                <div class="col-12 col-md-5 order-md-1 order-2 d-formulario animated fadeInLeft">
+                    <h3>¿Realiza un evento importante?</h3>
+                    <p>Sepa que Tanaka se encuentra capacitado para albergar eventos de la necesidad que usted requiera</p>
+                    <p><b>Haganoslo saber</b></p>
+                    <button type="button" class="btn btn-primary" style="background-color:#e1002f !important;border-color: #e1002f !important;border-radius: 0px !important;">
+                        Eventos
+                    </button>
+                </div>
+                <div class="col-12 col-md-7 order-md-2 order-1 animated fadeInRight">
+                    <form>
+                        <div class="form-group">
+                            <label>Nombre para la Reserva</label>
+                            <input type="text" class="form-control" placeholder="Nombre Reserva">
+                            <small id="emailHelp" class="form-text text-muted">No necesita poner su nombre aqui, es solo un identificador.</small>
+                        </div>
+                        <div class="form-group">
+                            <label>E-Mail</label>
+                            <input type="email" class="form-control" placeholder="E-Mail">
+                        </div>
+                        <div class="form-group">                            
+                            <div class="row">
+                                <div class="col">
+                                    <label>Nombre</label>
+                                    <input type="text" class="form-control" placeholder="Nombre">
+                                </div>
+                                <div class="col">
+                                    <label>Apellidos</label>
+                                    <input type="text" class="form-control" placeholder="Apellidos">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">                     
+                            <div class="row">
+                                <div class="col">
+                                    <label>Numero de Adultos</label>
+                                    <select class="form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <label>Numero de Niños</label>
+                                    <select class="form-control">
+                                        <option>0</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#reserva">
+                                Realizar Reserva
+                        </button>
+                    </form>
+               </div>
+           </div>
+           <div class="modal fade" id="reserva" tabindex="-1" role="dialog" aria-labelledby="reservaLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="reservaLabel" style="color: black">Enhorabuena</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p style="color: black">
+                        Su reserva ha sido realizada con existo.<br>
+                        Le esperamos en Tanaka. 
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+       </section>
+       <section class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                        <h1 class="titulo animated fadeIn">Reseñas</h1>
+                        <h3 class="animated fadeIn">Procuramos que nuestro cliente siempre este comodo y esta es la prueba</h3>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 25px;">
+                <div class="card-columns">
+                    <div class="card animated fadeIn delay-1s">
+                        <div class="card-body">
+                            <h5 class="card-title">Irrepetible</h5>
+                            <p class="card-text">
+                                Increible, fue una noche inolvidable, la comida, el servicio y sobre todo el ambiente.<br>
+                                Indescriptible
+                            </p>
+                            <small class="text-muted">
+                                    Juan - Hace <cite title="Source Title">15 Dias</cite>
+                            </small>
+                        </div>
+                    </div>
+                    <div class="card animated fadeIn delay-1s">
+                        <div class="card-body">
+                            <h5 class="card-title">Excelente</h5>
+                            <p class="card-text">
+                                Mi mujer y yo disfrutamos muchisimo de la noche. <br>
+                                El ambiente es unico e hipnotizante.
+                            </p>
+                            <small class="text-muted">
+                                    Angela - Hace <cite title="Source Title">2 Horas</cite>
+                            </small>
+                        </div>
+                    </div>
+                    <div class="card animated fadeIn delay-1s">
+                        <div class="card-body">
+                            <h5 class="card-title">Un barco de sabores</h5>
+                            <p class="card-text">
+                                La eleccion de la noche sin duda fueron los menus de degustacion. <br>
+                                La cantidad perfecta para probar todas las delicias que esconde este sitio.
+                            </p>
+                            <small class="text-muted">
+                                    Anonimo - Hace <cite title="Source Title">25 Dias</cite>
+                            </small>
+                        </div>
+                    </div>
+                    <div class="card animated fadeIn delay-1s">
+                        <div class="card-body">
+                            <h5 class="card-title">Paladar inigualable</h5>
+                            <p class="card-text">
+                                Nunca habia probado un sushi asi. <br>
+                                No se que voy a comer despues de esta cena.
+                            </p>
+                            <small class="text-muted">
+                                    Lucia - Hace <cite title="Source Title">4 Dias</cite>
+                            </small>
+                        </div>
+                    </div>
+                    <div class="card animated fadeIn delay-1s">
+                        <div class="card-body">
+                            <h5 class="card-title">Que sabores!</h5>
+                            <p class="card-text">
+                                La salsa teriyaki podria incluso pedirla de bebida!
+                            </p>
+                            <small class="text-muted">
+                                    Anonimo - Hace <cite title="Source Title">5 Dias</cite>
+                            </small>
+                        </div>
+                    </div>
+                    <div class="card animated fadeIn delay-1s">
+                        <div class="card-body">
+                            <h5 class="card-title">Experiencia unica</h5>
+                            <p class="card-text">
+                                Mis hijos y mi mujer disfrutaron muchisimo estoy deseando volver para probar todos los menus.
+                            </p>
+                            <small class="text-muted">
+                                    Paco - Hace <cite title="Source Title">1 Dia</cite>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+       <section class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                        <h1 class="titulo animated fadeIn">Cuentanos tu experiencia</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <form>
+                        <div class="form-group">
+                            <label>Tu expereciencia en un comentario</label>
+                            <input type="text" class="form-control" placeholder="¿Que pensaste al salir del Restaurante?">
+                        </div>                    
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary" style="background-color:#e1002f !important;border-color: #e1002f !important;border-radius: 0px !important;">
+                            Enviar
+                        </button>
+                    </form>
+                </div>                
+            </div>
        </section>
     </main>
     <footer class="footer-tanaka">
@@ -71,8 +256,6 @@
                 <a href="./galeria.html">Galeria</a>
                 ·
                 <a href="./reservas.html">Reservas</a>
-                ·
-                <a href="./reservas.html">Reseñas</a>
             </p>
             <p class="footer-copy">Tanaka Shushi Restaurant &copy; 2019</p>
             <br>

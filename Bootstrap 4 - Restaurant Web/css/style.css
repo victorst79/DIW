@@ -73,10 +73,6 @@ main.home{
 	background-color: #e1002f;
 }
 
-.localizacion{
-	background-color: #e5dcb5;
-}
-
 /* MENUS */
 
 .menu{
@@ -88,11 +84,10 @@ main.home{
 }
 
 .menu-bg{
-	/* background-color: #e5dcb5; */
 	margin-top: 30px;	
-	background: -moz-linear-gradient(top, #e5dcb5 86%, #545454 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #e5dcb5 86%,#545454 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #e5dcb5 86%,#545454 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: -moz-linear-gradient(top, #e5dcb5 86%, #545454 100%);
+	background: -webkit-linear-gradient(top, #e5dcb5 86%,#545454 100%);
+	background: linear-gradient(to bottom, #e5dcb5 86%,#545454 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5dcb5', endColorstr='#545454',GradientType=0 );
 }
 
@@ -133,11 +128,117 @@ main.home{
 div.card{
 	background-color: #CCC4A1;
 }
+
 /* LOCALIZACION */
+
 .localizacion{
 	margin-top: 100px;
+	background-color: black;
+	color: white;
 }
 
+.localizacion .card{
+	background-color: white;
+	color: black;
+}
+
+.tamano{
+	width: 480px;
+	border-radius: 2px;
+}
+
+.haiku .card{
+	color: white;
+	margin: 30px 0px;
+	background-color: #1e2022;
+}
+
+.haiku h4{
+	margin-top: 10px;
+	color: #e1002f;
+}
+
+.restaurante-desc h3{
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+.a-center{
+	margin: auto;
+}
+
+.t-margin{
+	margin-top: 25px;
+	margin-bottom: 35px;
+}
+
+.localizacion .pre-footer{
+	margin-top: -1px;
+}
+
+/* GALERIA */
+
+.galeria{
+	background-color: black;
+}
+
+.t-galeria{
+	margin-top: 100px;
+	color: white;
+}
+
+.galeria-c .row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+.galeria-c .column {
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+}
+
+.galeria-c .column img {
+	margin-top: 8px;
+	vertical-align: middle;
+}
+
+
+/* RESERVAS */
+
+.reserva{
+	margin-top: 100px;
+	background-color: black;
+	color: white;
+}
+
+.reserva .card{
+	background-color: white;
+	color: black;
+}
+
+.formulario{
+	margin: 40px 0px;
+}
+
+.d-formulario{
+	margin: auto;
+}
+
+form .modal-dialog{
+	color: black !important;
+}
+
+form input, form select{
+	border-radius: 0px !important;
+}
+
+form button{
+	background-color: #e1002f !important;
+	border-color: #e1002f !important;
+	border-radius: 0px !important;
+}
 /* FOOTER */
 
 footer a.footer-red{
@@ -277,8 +378,19 @@ footer a.footer-red:hover{
 	margin-bottom: 5px;
 }
 
-/* MEDIA QUERIES */
+/* TITULOS */
 
+.titulo::after{
+	content: '';
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: solid 1.5px #e1002f;
+	display: block;
+	width: 150px;
+}
+
+/* MEDIA QUERIES */
 @media (max-width: 880px) {
 	.footer-tanaka{
 		font: bold 14px sans-serif;
@@ -299,5 +411,32 @@ footer a.footer-red:hover{
 
 	nav{
 		background-color: black !important;
+	}
+
+	.a-center{
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+}
+
+
+/* MEDIA GALERIA */
+@media screen and (max-width: 800px) {
+	.galeria-c .column {
+		-ms-flex: 50%;
+		flex: 50%;
+		max-width: 50%;
+	}
+
+	.d-formulario{
+		margin: 35px 0px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.galeria-c .column {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
 	}
 }

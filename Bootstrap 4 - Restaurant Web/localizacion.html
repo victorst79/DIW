@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" href="./resources/favicon.png">
 </head>
 <body class="localizacion">
     <header>
@@ -38,32 +39,62 @@
                             <li class="nav-item">
                                 <a class="nav-link scroll-link" href="./reservas.html">Reservas</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link scroll-link" href="./reseñas.html">Reseñas</a>
-                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
     </header>
     <main>        
-       <section class="container">
+       <section class="container restaurante-desc">
            <div class="row text-center">
-               <div class="col-12">
-                    <h3>El restaurante</h3>
-                    <p>El mejor ambiente fusionando con la mejor comida Japonesa de manos de maestros itamaes.</p>
+               <div class="col-12 animated fadeIn">
+                    <h1 class="titulo">El Restaurante</h1>
+                    <h3>La mejor gastronomia Japonesa de manos de maestros itamaes.</h3>
                </div>
            </div>
            <div class="row">
-               <div class="col-6">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet quia, sit reiciendis necessitatibus quibusdam harum ducimus illum accusantium, dicta nesciunt debitis mollitia veniam alias error illo? Minima vero maiores tempora.</p>
+               <div class="col-md-12 col-xl-6 text-center">
+                    <img class="tamano animated fadeInLeft" src="./resources/background-1.jpg">
                </div>
-               <div class="col-6">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet quia, sit reiciendis necessitatibus quibusdam harum ducimus illum accusantium, dicta nesciunt debitis mollitia veniam alias error illo? Minima vero maiores tempora.</p>
+               <div class="col-md-12 col-xl-6 a-center animated fadeInRight">
+                    <p class="text-center">
+                        Tanaka ofrece toda una experiencia de sentidos por eso te traemos todo lo necesario para que te sientas como en el pais del sol naciente.
+                        nuestros maestros itamaes te llevaran a las mejores sensaciones y sabores formulando todo una experiencia para nuestros clientes.
+                    </p>
                </div>
+           </div>
+           <div class="row haiku">
+               <div class="col-12">
+                    <div class="card animated fadeInRight">
+                        <div class="card-body text-right">
+                            <i>
+                                "Cuando canta la cigarra,<br>
+                                cuando canta,<br>
+                                canta en coro<br>
+                                y el sol muere."<br>
+                                <h4>-Ogiwara Seisensui</h4>    
+                            </i>
+                        </div>
+                    </div>
+               </div>
+           </div>
+           <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center t-margin animated fadeInLeft">Localizacion</h1>
+                </div>
            </div>
        </section>
        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.863486534757!2d139.69852161525813!3d35.65573488020028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5760da95e7%3A0xc05446586d1efe7a!2s150-0031%2C+Jap%C3%B3n!5e0!3m2!1ses!2ses!4v1549011821314" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+       <section class="container-fluid pre-footer">
+            <div class="row">
+                <div class="col-8">
+                    <h3>Reserva cuanto antes.</h3>
+                </div>
+                <div class="col-4">
+                    <a href="./reservas.html"><button type="button" class="btn btn-danger">Reservar</button> </a> 
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer-tanaka">
         <div class="footer-left">
@@ -80,8 +111,6 @@
                 <a href="./galeria.html">Galeria</a>
                 ·
                 <a href="./reservas.html">Reservas</a>
-                ·
-                <a href="./reservas.html">Reseñas</a>
             </p>
             <p class="footer-copy">Tanaka Shushi Restaurant &copy; 2019</p>
             <br>
