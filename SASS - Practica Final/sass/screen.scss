@@ -4,42 +4,55 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 // @import "compass/reset";
+/* CSS used here will be applied after bootstrap.css */
+header{ 
+  .navbar-fixed-left {
+    width: 140px;
+    position: fixed;
+    border-radius: 0;
+    height: 100%;
+    background: black;
+  }
 
-@media (min-width: 768px) {
-    .navbar-collapse {
-      height: auto;
-      border-top: 0;
-      box-shadow: none;
-      max-height: none;
-      padding-left:0;
-      padding-right:0;
-    }
-    .navbar-collapse.collapse {
-      display: block !important;
-      width: auto !important;
-      padding-bottom: 0;
-      overflow: visible !important;
-    }
-    .navbar-collapse.in {
-      overflow-x: visible;
-    }
-  
-  .navbar
-  {
-      max-width:300px;
-      margin-right: 0;
-      margin-left: 0;
-  }	
-  
-  .navbar-nav,
-  .navbar-nav > li,
-  .navbar-left,
-  .navbar-right,
-  .navbar-header
-  {float:none !important;}
-  
-  .navbar-right .dropdown-menu {left:0;right:auto;}
-  .navbar-collapse .navbar-nav.navbar-right:last-child {
-      margin-right: 0;
+  .navbar-fixed-left .navbar-nav > li {
+	float: none;  
   }
+
+  .navbar-fixed-left + .container {
+    // padding-left: 160px;
   }
+
+  li{
+    a{
+      font-size: 1.5rem;
+      margin: 15px 0;
+      color: white;
+      transition: 0.5s;
+
+      &:hover{
+        font-size: 1.6rem;
+        color: white;
+        text-decoration: none !important;
+      }
+    }
+  }
+}
+
+main.content {
+  // margin-left: 140px;
+  background-image: url('../resources/bg-1.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  section.home{
+	padding-top: 180px;
+
+	h1{
+		border-left: 2px solid rgb(68, 0, 0);
+		padding: 15px;
+	}
+  }  
+}

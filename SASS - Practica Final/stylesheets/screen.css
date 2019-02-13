@@ -2,54 +2,48 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@media (min-width: 768px) {
-  /* line 9, ../sass/screen.scss */
-  .navbar-collapse {
-    height: auto;
-    border-top: 0;
-    box-shadow: none;
-    max-height: none;
-    padding-left: 0;
-    padding-right: 0;
-  }
+/* CSS used here will be applied after bootstrap.css */
+/* line 9, ../sass/screen.scss */
+header .navbar-fixed-left {
+  width: 140px;
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+  background: black;
+}
+/* line 17, ../sass/screen.scss */
+header .navbar-fixed-left .navbar-nav > li {
+  float: none;
+}
+/* line 26, ../sass/screen.scss */
+header li a {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  color: white;
+  transition: 0.5s;
+}
+/* line 32, ../sass/screen.scss */
+header li a:hover {
+  font-size: 1.6rem;
+  color: white;
+  text-decoration: none !important;
+}
 
-  /* line 17, ../sass/screen.scss */
-  .navbar-collapse.collapse {
-    display: block !important;
-    width: auto !important;
-    padding-bottom: 0;
-    overflow: visible !important;
-  }
-
-  /* line 23, ../sass/screen.scss */
-  .navbar-collapse.in {
-    overflow-x: visible;
-  }
-
-  /* line 27, ../sass/screen.scss */
-  .navbar {
-    max-width: 300px;
-    margin-right: 0;
-    margin-left: 0;
-  }
-
-  /* line 34, ../sass/screen.scss */
-  .navbar-nav,
-  .navbar-nav > li,
-  .navbar-left,
-  .navbar-right,
-  .navbar-header {
-    float: none !important;
-  }
-
-  /* line 41, ../sass/screen.scss */
-  .navbar-right .dropdown-menu {
-    left: 0;
-    right: auto;
-  }
-
-  /* line 42, ../sass/screen.scss */
-  .navbar-collapse .navbar-nav.navbar-right:last-child {
-    margin-right: 0;
-  }
+/* line 41, ../sass/screen.scss */
+main.content {
+  background-image: url("../resources/bg-1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+/* line 50, ../sass/screen.scss */
+main.content section.home {
+  padding-top: 180px;
+}
+/* line 53, ../sass/screen.scss */
+main.content section.home h1 {
+  border-left: 2px solid #440000;
+  padding: 15px;
 }
