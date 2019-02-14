@@ -1,10 +1,10 @@
-header{ 
+header{
     .navbar-fixed-left {
       width: 140px;
       position: fixed;
       border-radius: 0;
       height: 100%;
-      background: $mainNavColor;
+      background: transparent;
     }
   
     .navbar-fixed-left .navbar-nav > li {

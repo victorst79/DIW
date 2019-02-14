@@ -13,7 +13,7 @@
 </head>
 <body>
 	<header>
-		<nav class="navbar navbar-inverse navbar-fixed-left">
+		<!-- <nav class="navbar navbar-inverse navbar-fixed-left">
 			<img src="./resources/logo.png" width="90" height="90" class="d-inline-block align-top">
 			<ul class="nav navbar-nav">
 				<li><a href="#home">Home</a></li>
@@ -21,34 +21,34 @@
 				<li><a href="#employees">Employees</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
-		</nav>
+		</nav> -->
 	</header>
-	<main class="content">
+	<main container>
 		<a name="anchor" id="home"></a>
-		<section class="container home">
-			<div class="row">
-				<h1 class="offset-2 col-10 animated fadeInLeft">
-					Architecture<br>
-					ebbs away to <br>
-					whence it came.
-				</h1>
+		<section data-anchor="home " class=" home">
+			<div class="row">				
+				<div class="col-12">
+					<h1 class="col-10 animated fadeInLeft">
+						Architecture<br>
+						ebbs away to <br>
+						whence it came.
+					</h1>
+				</div>
 			</div>
-			<div class="row">
-				<a href="#contact" class="offset-2 col-2 animated fadeInLeft">Contact <i class="far fa-envelope"></i></a>
-			</div>
+				<!-- <div class="row">
+					<a href="#contact" class="col-2 animated fadeInLeft">Contact <i class="far fa-envelope"></i></a>
+				</div> -->
 		</section>
-		<a name="anchor" id="works"></a>
-		<section class="container works">	
-			<div class="row">
-				<h1 class="col-12">test</h1>
-			</div>
-		</section>
+		<section data-anchor="Page 2"><div class="text">Page 2</div></section>
+		<section data-anchor="Page 3"><div class="text">Page 3</div></section>
+		<section data-anchor="Page 4"><div class="text">Page 4</div></section>
+		<section data-anchor="Page 5"><div class="text">Page 5</div></section>
 	</main>
-	<footer>
-
-	</footer>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+	<script src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
+	<script src="js/effect.js"></script>
 </body>
 </html>

@@ -16,7 +16,7 @@ header .navbar-fixed-left {
   position: fixed;
   border-radius: 0;
   height: 100%;
-  background: #000000;
+  background: transparent;
 }
 /* line 10, ../sass/_header.scss */
 header .navbar-fixed-left .navbar-nav > li {
@@ -48,77 +48,19 @@ header li a:hover {
   }
 }
 
-/* line 1, ../sass/_main.scss */
-main.content {
+/* line 2, ../sass/_main.scss */
+main section.home {
   background-image: url("../resources/bg-1.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
 }
-/* line 11, ../sass/_main.scss */
-main.content section.home {
-  padding-top: 125px;
-}
-/* line 14, ../sass/_main.scss */
-main.content section.home h1 {
+/* line 9, ../sass/_main.scss */
+main section.home h1 {
   border-left: 2px solid #fd2800;
   padding: 15px;
   font-size: 3rem;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-}
-/* line 22, ../sass/_main.scss */
-main.content section.home a {
-  margin-top: 30px;
-  padding: 10px;
-  color: #fd2800;
-  font-size: 1.2rem;
-  border: solid 3px #fd2800;
-  border-radius: 8px;
-  text-align: center;
-  transition: 0.5s;
-  transform: 0.5s;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-/* line 34, ../sass/_main.scss */
-main.content section.home a i {
-  opacity: 0;
-  transition: all 0.5s;
-  transform: 0.5s;
-}
-/* line 39, ../sass/_main.scss */
-main.content section.home a:hover {
-  color: black;
-  border-color: black;
-  border-radius: 0;
-}
-/* line 43, ../sass/_main.scss */
-main.content section.home a:hover i {
-  opacity: 100;
-  margin-left: 7px;
-  color: #000000;
-}
-@media (max-width: 991.98px) {
-  /* line 51, ../sass/_main.scss */
-  main.content section.home a a {
-    padding: 7px 30px;
-  }
-  /* line 55, ../sass/_main.scss */
-  main.content section.home a i {
-    display: none;
-  }
-}
-@media (max-width: 767.98px) {
-  /* line 22, ../sass/_main.scss */
-  main.content section.home a {
-    display: none;
-  }
-}
-/* line 68, ../sass/_main.scss */
-main.content section.works {
-  margin-top: 60vh;
-  background-color: #010b14;
 }

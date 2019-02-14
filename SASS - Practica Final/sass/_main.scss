@@ -1,15 +1,10 @@
-main.content {
-    // margin-left: 140px;
-    background-image: url('../resources/bg-1.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-
-    // HOME
+main{
     section.home{
-        padding-top: 125px;
+        background-image: url('../resources/bg-1.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
         h1{
             border-left: 2px solid $fifth;
@@ -18,55 +13,5 @@ main.content {
             font-family: $montserrat;
             font-weight: bold;
         }
-
-        a{
-            margin-top: 30px;
-            padding: 10px;
-            color: $fifth;
-            font-size: 1.2rem;
-            border: solid 3px $fifth;
-            border-radius: 8px;
-            text-align: center;
-            transition: 0.5s;
-            transform: 0.5s;
-            text-decoration: none;
-            text-transform: uppercase;
-            i{
-                opacity: 0;
-                transition: all 0.5s;
-                transform: 0.5s;
-            }
-            &:hover{
-                color: black;
-                border-color: black;
-                border-radius: 0;
-                i{
-                    opacity: 100;
-                    margin-left: 7px;
-                    color: $mainNavColor;
-                }
-            }
-
-            @media (max-width: $breakpoint-tablet) {
-                a{
-                    padding: 7px 30px;
-                    
-                }
-                i{
-                    display: none;
-                }
-                
-            }
-        
-            @media (max-width: $breakpoint-mobile) {
-                display: none;
-            }
-        }
-    }
-
-    // WORKS
-    section.works{
-        margin-top: 60vh;
-        background-color: $second;
     }
 }
