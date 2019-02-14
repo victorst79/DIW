@@ -1,0 +1,36 @@
+header{ 
+    .navbar-fixed-left {
+      width: 140px;
+      position: fixed;
+      border-radius: 0;
+      height: 100%;
+      background: $mainNavColor;
+    }
+  
+    .navbar-fixed-left .navbar-nav > li {
+      float: none;  
+    }
+  
+    li{
+      a{
+        font-size: 1.5rem;
+        margin: 15px 0;
+        color: white;
+        transition: 0.5s;
+  
+        &:hover{
+          font-size: 1.6rem;
+          color: white;
+          text-decoration: none !important;
+        }
+      }
+    }
+
+	@media (max-width: $breakpoint-tablet) {
+		display: none;
+	}
+
+	@media (max-width: $breakpoint-mobile) {
+		display: none;
+	}
+}

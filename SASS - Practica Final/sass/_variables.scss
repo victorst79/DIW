@@ -1,0 +1,22 @@
+// COLORS
+$mainNavColor: #000000;
+$second: #010b14;
+$third: #d2d2d2;
+$fourth: #ffffff;
+$fifth: #fd2800;
+
+// FONTS
+$montserrat: 'Montserrat', sans-serif;
+$raleway: 'Raleway', sans-serif;
+
+// BREAKPOINTS
+$breakpoint-mobile: 767.98px;
+$breakpoint-tablet: 991.98px;
+$breakpoint-desktop: 1199.98px;
+
+// INIT RESET
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: $montserrat;
+}
