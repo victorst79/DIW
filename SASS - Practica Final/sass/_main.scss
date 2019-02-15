@@ -1,5 +1,6 @@
 main{
-
+    background-color: $mainNavColor;
+    
     section.home{
         background-image: url('../resources/bg-1.jpg');
         background-attachment: fixed;
@@ -161,6 +162,15 @@ main{
         }
         .gallery li:hover .work-data{ 
             background:rgba(128, 128, 128, 0.336)
+        }
+    }
+
+    section.employees{
+        background-color: $mainNavColor;
+
+        h2{
+            margin-top: 25px;
+            color: $fourth;
         }
     }
 }
