@@ -20,3 +20,20 @@ $breakpoint-desktop: 1199.98px;
     padding: 0px;
     font-family: $montserrat;
 }
+
+// MIXIN
+
+@mixin colorLinks ($fifth, $second, $third) {
+    a {
+      color: $fifth;
+      &:visited {
+        color: $second;
+      }
+      &:hover {
+        color: $third;   
+      }
+      &:active {
+        color: $fifth;
+      }
+    }
+  }

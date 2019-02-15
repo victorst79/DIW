@@ -4,7 +4,9 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 // @import "compass/reset";
-/* CSS used here will be applied after bootstrap.css */
-@import "_variables.scss";
-@import "_header.scss";
-@import "_main.scss";
+// @import "compass/utilities/sprites";
+// @import "../resources/icons/*.png";
+@import "./variables";
+@import "./header.scss";
+@import "./main.scss";
+@import "./footer";

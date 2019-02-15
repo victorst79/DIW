@@ -2,7 +2,6 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* CSS used here will be applied after bootstrap.css */
 /* line 18, ../sass/_variables.scss */
 * {
   margin: 0px;
@@ -10,70 +9,46 @@
   font-family: "Montserrat", sans-serif;
 }
 
-/* line 2, ../sass/_header.scss */
-header .navbar-fixed-left {
-  width: 140px;
-  position: fixed;
-  border-radius: 0;
-  height: 100%;
-  background: transparent;
+/* line 3, ../sass/_header.scss */
+header nav.navbar {
+  background: #010b14 !important;
+  -o-transition: all .6s;
+  -moz-transition: all .6s;
+  -webkit-transition: all .6s;
+  -ms-transition: all .6s;
+  transition: all .6s;
+  backface-visibility: hidden;
 }
-/* line 10, ../sass/_header.scss */
-header .navbar-fixed-left .navbar-nav > li {
-  float: none;
-}
-/* line 15, ../sass/_header.scss */
-header li a {
-  font-size: 1.5rem;
-  margin: 15px 0;
-  color: white;
-  transition: 0.5s;
-}
-/* line 21, ../sass/_header.scss */
-header li a:hover {
-  font-size: 1.6rem;
-  color: white;
-  text-decoration: none !important;
-}
-@media (max-width: 991.98px) {
-  /* line 1, ../sass/_header.scss */
-  header {
-    display: none;
-  }
-}
-@media (max-width: 767.98px) {
-  /* line 1, ../sass/_header.scss */
-  header {
-    display: none;
-  }
+/* line 12, ../sass/_header.scss */
+header nav.navbar .navbar-brand {
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
 }
 
-/* line 1, ../sass/_main.scss */
-main {
-  background-color: #000000;
-}
-/* line 4, ../sass/_main.scss */
-main section.home {
+/* line 3, ../sass/_main.scss */
+main section.calltoaction {
+  height: 100vh;
   background-image: url("../resources/bg-1.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 10, ../sass/_main.scss */
-main section.home h1 {
+/* line 12, ../sass/_main.scss */
+main section.calltoaction h1 {
   border-left: 2px solid #fd2800;
   padding: 15px;
   font-size: 3rem;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  margin-top: 120px;
+  margin-top: 200px !important;
   color: #ffffff;
   text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
-/* line 25, ../sass/_main.scss */
-main section.home a {
-  margin-top: 15px;
+/* line 27, ../sass/_main.scss */
+main section.calltoaction a {
+  margin-top: 20px !important;
   border: solid 2px #ffffff;
   border-radius: 5px;
   padding: 5px 10px;
@@ -85,15 +60,15 @@ main section.home a {
   font-size: 1.3rem;
   font-weight: bold;
 }
-/* line 38, ../sass/_main.scss */
-main section.home a:hover {
+/* line 40, ../sass/_main.scss */
+main section.calltoaction a:hover {
   border-radius: 0px;
   text-decoration: none;
   border-color: #fd2800;
   color: #fd2800;
 }
-/* line 46, ../sass/_main.scss */
-main section.home .scroller {
+/* line 48, ../sass/_main.scss */
+main section.calltoaction .scroller {
   margin-top: 200px;
   bottom: 20px;
   left: 50%;
@@ -104,8 +79,8 @@ main section.home .scroller {
   border: 4px solid #fff;
   border-radius: 30px;
 }
-/* line 58, ../sass/_main.scss */
-main section.home .scroller::after {
+/* line 60, ../sass/_main.scss */
+main section.calltoaction .scroller::after {
   position: absolute;
   top: 12px;
   left: 50%;
@@ -141,84 +116,249 @@ main section.home .scroller::after {
     opacity: 0;
   }
 }
-/* line 99, ../sass/_main.scss */
+/* line 101, ../sass/_main.scss */
 main section.works {
-  background-color: #000000;
-}
-/* line 102, ../sass/_main.scss */
-main section.works h2 {
-  margin-top: 25px;
+  background-color: #010b14;
   color: #ffffff;
 }
-/* line 107, ../sass/_main.scss */
-main section.works img {
-  max-width: 100%;
-}
-/* line 111, ../sass/_main.scss */
-main section.works .gallery {
-  padding: 0;
-  display: flow-root;
+/* line 105, ../sass/_main.scss */
+main section.works h1 {
+  margin-top: 25px;
+  border-left: 2px solid #fd2800;
+  padding: 15px;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 /* line 115, ../sass/_main.scss */
-main section.works .gallery li {
-  width: 33%;
-  max-width: 100%;
-  display: inline-block;
-  float: left;
+main section.works .work-1 {
+  height: 350px;
+  background-image: url("../resources/work1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all .5s;
   text-align: center;
-  overflow: hidden;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
 }
-/* line 124, ../sass/_main.scss */
-main section.works .gallery li img {
-  -webkit-transition: transform 0.5s ease;
-  -o-transition: transform 0.5s ease;
-  transition: transform 0.5s ease;
-}
-/* line 130, ../sass/_main.scss */
-main section.works .gallery li:hover img {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
+/* line 134, ../sass/_main.scss */
+main section.works .work-1:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 /* line 140, ../sass/_main.scss */
-main section.works .gallery li:nth-child(even) {
-  height: 304px;
+main section.works .work-2 {
+  height: 350px;
+  background-image: url("../resources/work2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all .5s;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
 }
-/* line 144, ../sass/_main.scss */
-main section.works .gallery li:nth-child(odd) {
-  height: 438px;
+/* line 159, ../sass/_main.scss */
+main section.works .work-2:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
-/* line 148, ../sass/_main.scss */
-main section.works .gallery .work-data {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  color: #fff;
-}
-/* line 156, ../sass/_main.scss */
-main section.works .gallery .work-data span {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  right: 0;
-  font-size: 24px;
-}
-/* line 163, ../sass/_main.scss */
-main section.works .gallery li:hover .work-data {
-  background: rgba(128, 128, 128, 0.336);
-}
-/* line 168, ../sass/_main.scss */
+/* line 166, ../sass/_main.scss */
 main section.employees {
-  background-color: #000000;
+  padding: 25px 0;
+  background-image: url("../resources/working.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-/* line 171, ../sass/_main.scss */
-main section.employees h2 {
-  margin-top: 25px;
+/* line 174, ../sass/_main.scss */
+main section.employees h1 {
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #fd2800;
+}
+/* line 183, ../sass/_main.scss */
+main section.employees form label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #fd2800;
+}
+/* line 189, ../sass/_main.scss */
+main section.employees form input {
+  border-color: #fd2800;
+}
+/* line 192, ../sass/_main.scss */
+main section.employees form input:focus {
+  border-color: #fd2800;
+  box-shadow: none;
+}
+/* line 198, ../sass/_main.scss */
+main section.employees form textarea {
+  border-color: #fd2800;
+}
+/* line 201, ../sass/_main.scss */
+main section.employees form textarea:focus {
+  border-color: #fd2800;
+  box-shadow: none;
+}
+/* line 207, ../sass/_main.scss */
+main section.employees form button {
+  background: #fd2800;
+  border-color: #fd2800;
+  transition: .5s;
+}
+/* line 212, ../sass/_main.scss */
+main section.employees form button:hover {
+  background: transparent;
+  border-color: #fd2800;
+  color: #fd2800;
+}
+
+/* line 1, ../sass/_footer.scss */
+footer {
+  background-color: #010b14;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+/* line 10, ../sass/_footer.scss */
+footer a.footer-color {
+  text-decoration: none;
+  color: #fd2800 !important;
+}
+/* line 14, ../sass/_footer.scss */
+footer a.footer-color:hover {
+  color: #fd2800 !important;
+}
+/* line 19, ../sass/_footer.scss */
+footer h3 {
   color: #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+/* line 25, ../sass/_footer.scss */
+footer .footer-left, footer .footer-center, footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 30, ../sass/_footer.scss */
+footer .footer-left {
+  width: 40%;
+}
+/* line 34, ../sass/_footer.scss */
+footer .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+/* line 39, ../sass/_footer.scss */
+footer .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+/* line 47, ../sass/_footer.scss */
+footer .footer-copy {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+/* line 54, ../sass/_footer.scss */
+footer .footer-center {
+  width: 35%;
+}
+/* line 57, ../sass/_footer.scss */
+footer .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+/* line 69, ../sass/_footer.scss */
+footer .footer-center i .fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+/* line 75, ../sass/_footer.scss */
+footer .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+/* line 81, ../sass/_footer.scss */
+footer .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+/* line 90, ../sass/_footer.scss */
+footer .footer-right {
+  width: 20%;
+}
+/* line 94, ../sass/_footer.scss */
+footer .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+/* line 101, ../sass/_footer.scss */
+footer .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* line 110, ../sass/_footer.scss */
+footer .footer-icons {
+  margin-top: 25px;
+}
+
+@media (max-width: 991.98px) {
+  /* line 121, ../sass/_footer.scss */
+  .vsfooter .footer-left,
+  .vsfooter .footer-center,
+  .vsfooter .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  /* line 130, ../sass/_footer.scss */
+  .vsfooter .footer-center i {
+    margin-left: 0;
+  }
 }
